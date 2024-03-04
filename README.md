@@ -40,11 +40,8 @@ This project provides a Nerf-based CT volume reconstruction method using a proje
 # 4. Instructions for Use
 
 ## Training
-- Run `python train_pre.py` to perform the first training process with the default setting. Then change the parameter `pretrain_dir` and run `python train_sec.py` to begin the second training process.
-- Run `python train_SECT_DECT.py` to start the DECT imaging generation module training stage.
-
-## Test demo
-Run `python decompose_demo.py` to test the trained model deposited in `./checkpoints/decompose_four/` on the data in `./data/demo_data/`. Image results are stored in `./decompose_result/`.
+- Run `python simulate_DRR.py` to simulate X-ray images using the DRR method. Then change the parameter in `configs.py` for the subsequent training process.
+- Run `python train.py` to start the module training stage.
 
 # 5. License
 This project is covered under the BSD-3-Clause License.
